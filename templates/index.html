@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+<h1 align="center">Login Page </h1>
+
+<form action="readdata" method="post"/>
+{% csrf_token %} // this is mandatory becz it protects from unauthorize user
+
+<table align="center">
+
+    <tr>
+        <td>Name: </td>
+        <td><input type="text" name="txtName"/></td>
+    </tr>
+    <tr>
+        <td>Age: </td>
+        <td><input type="number" name="txtAge"/></td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td><input type="email" name="txtMail"/></td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td><input type="submit" value="Submit" name="btnSubmit"/></td>
+    </tr>
+
+</table>
+</body>
+</html>
